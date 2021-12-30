@@ -14,7 +14,8 @@ services:
              python manage.py migrate contenttypes --noinput
              python manage.py migrate sessions --noinput
              python manage.py migrate django_plotly_dash --fake --noinput
-             python manage.py runserver 0.0.0.0:8000"
+             python manage.py runserver 0.0.0.0:8000
+             python manage.py createsuperuser --noinput"
     ports:
       - 8000:8000
     env_file:

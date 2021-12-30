@@ -5,7 +5,7 @@ Aqui estaremos construíndo a nova versão do Website do MoDCS.
 Para poder rodar esse projeto, primeiro você deve ter o docker e o docker-compose instalado na sua máquina. Caso você ainda não tenha instalado o docker e o docker-compose, veja esse [tutorial](https://dev.to/semirteskeredzic/docker-docker-compose-on-ubuntu-20-04-server-4h3k), siga esses passos e configure de forma que não precise usar o `sudo` para executar o docker.
 
 # Executando
-Uma vez que o docker e o docker-compose esteja instalado na sua máquina, clone esse repositório, acesse o diretório `modcs-website`, e altere o arquivo `env-sample` e salve como `.env` para que o docker-compose encontre as variáveis de ambiente que serão usadas no container.
+Uma vez que o docker e o docker-compose esteja instalado na sua máquina, clone esse repositório, acesse o diretório `modcs-website`, e crie um arquivo `.env` e então copie o conteúdo do arquivo `env-sample` e cole no arquivo `.env`. Isso porque o docker-compose precisa buscar nesse arquivo `.env` as variáveis de ambiente que serão usadas no container.
 
 Após isso, execute o seguinte comando:
 ```bash
